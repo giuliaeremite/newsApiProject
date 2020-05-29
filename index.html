@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Newsfeed App</title>
+  </head>
+  <body>
+    <div class="app-wrapper">
+      <nav class="main-nav">
+        <div class="logo">Your News Today</div>
+        <div class="search">
+          <label for="selectNewsSources">Select News Source </label>
+          <select class="selectNewsSource" id="selectNewsSource">
+
+            <option id="al-jazeera-english" value="al-jazeera-english"
+              >Al Jazeera</option
+            >
+            <option id="bbc-news" value="bbc-news">BBC News</option>
+            <option id="business-insider" value="business-insider"
+              >Business Insider</option
+            >
+            <option id="cnn" value="cnn" selected>CNN</option>
+            <option id="financial-times" value="financial-times"
+              >Financial Times</option
+            >
+            <option id="google-news" value="google-news">Google News</option>
+            <option id="the-verge" value="the-verge">The Verge</option>
+            <option id="the-wall-street-journal" value="the-wall-street-journal"
+              >The Wall Street Journal</option
+            >
+            <option id="the-washington-post" value="the-washington-post"
+              >The Washington Post</option
+            >
+            <option id="usa-today" value="usa-today">Usa Today</option>
+          </select>
+
+          <button class="search-btn" id="search-btn">Search</button>
+        </div>
+      </nav>
+      <main id="content" class="content">
+        <div class="search-results" id="search-results"></div>
+        <div class="displayed-article" id="displayed-article"></div>
+      </main>
+      <footer id="main-footer" class="main-footer">
+        © Copyright Giulia Piras 2020
+      </footer>
+    </div>
+    <script src="request.js"></script>
+    <script src="functions.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
